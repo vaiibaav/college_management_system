@@ -11,8 +11,9 @@ if ($this->uri->segment(1) == "bscadmission") { ?>
                                   <div class="col-md-2">
                                         <label>Select Session</label>
                                         <select class="custom-select" name="bsccompulsorysub" required>
-                                          <option value="">Choose...</option>
-                                          
+                                          <?php foreach ($data as $row) { ?>
+                                            <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
+                                          <?php } ?>
                                         </select>
                                     </div>
                                     <div class="col-md-2">
@@ -91,11 +92,19 @@ if ($this->uri->segment(1) == "bscadmission") { ?>
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                  <div class="col-md-2">
+                                        <label>Select Session</label>
+                                        <select class="custom-select" name="bsccompulsorysub" required>
+                                          <?php foreach ($data as $row) { ?>
+                                            <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
+                                          <?php } ?>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
                                         <label>Admission Form No.</label>
                                         <input type="text" name="formno" value="<?=set_value('formno'); ?>" class="form-control">
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <label>Admission Date</label>
                                         <input type="date" name="admdate" value="<?=set_value('admdate'); ?>" class="form-control">
                                     </div>
@@ -153,11 +162,19 @@ if ($this->uri->segment(1) == "bscadmission") { ?>
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                  <div class="col-md-2">
+                                        <label>Select Session</label>
+                                        <select class="custom-select" name="bsccompulsorysub" required>
+                                          <?php foreach ($data as $row) { ?>
+                                            <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
+                                          <?php } ?>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
                                         <label>Admission Form No.</label>
                                         <input type="text" name="formno" value="<?=set_value('formno'); ?>" class="form-control">
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-2">
                                         <label>Admission Date</label>
                                         <input type="date" name="admdate" value="<?=set_value('admdate'); ?>" class="form-control">
                                     </div>

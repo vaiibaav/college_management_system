@@ -9,34 +9,42 @@ class Admission extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('admissionm');
+		
 	}
+
 	public function index()
 	{
 		$this->load->view('admin/admission');
 	}
 	public function bscadmission()
 	{
-		$this->load->view('admin/ugadmission');
+		$clgsession["data"] = $this->admissionm->collegesession();
+		$this->load->view('admin/ugadmission',$clgsession);
 	}
 	public function bcomadmission()
 	{
-		$this->load->view('admin/ugadmission');
+		$clgsession["data"] = $this->admissionm->collegesession();
+		$this->load->view('admin/ugadmission',$clgsession);
 	}
 	public function baadmission()
 	{
-		$this->load->view('admin/ugadmission');
+		$clgsession["data"] = $this->admissionm->collegesession();
+		$this->load->view('admin/ugadmission',$clgsession);
 	}
 	public function bscstudentview()
 	{
-		$this->load->view('admin/ugstudentview');
+		$clgsession["data"] = $this->admissionm->collegesession();
+		$this->load->view('admin/ugstudentview',$clgsession);
 	}
 	public function bcomstudentview()
 	{
-		$this->load->view('admin/ugstudentview');
+		$clgsession["data"] = $this->admissionm->collegesession();
+		$this->load->view('admin/ugstudentview',$clgsession);
 	}
 	public function bastudentview()
 	{
-		$this->load->view('admin/ugstudentview');
+		$clgsession["data"] = $this->admissionm->collegesession();
+		$this->load->view('admin/ugstudentview',$clgsession);
 	}
 
 	public function bscformvalidation()

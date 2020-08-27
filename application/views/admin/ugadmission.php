@@ -36,6 +36,18 @@
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Session : </li>
                         </ol>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">
+                                <span class="btn">Admission To : </span>
+                                <a href="<?=base_url();?>bscadmission" class="btn btn-info mr-2">B.Sc.</a>
+                                <a href="<?=base_url();?>bcomadmission" class="btn btn-info mr-2">B.Com.</a>
+                                <a href="<?=base_url();?>baadmission" class="btn btn-info mr-2">B.A.</a>
+                                <a href="" class="btn btn-info mr-2">B.A. (Civil Services)</a>
+                                <a href="" class="btn btn-info mr-2">M.Sc.</a>
+                                <a href="" class="btn btn-info mr-2">B.A. (Civil Services)</a>
+                                <a href="" class="btn btn-info mr-2">P.G.D.C.A.</a>
+                            </li>
+                        </ol>
                         <?php $this->load->view('admin/courseform'); ?>
                         <br>
                         <?php $this->load->view('admin/admissionform'); ?>

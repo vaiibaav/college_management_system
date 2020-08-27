@@ -10,6 +10,11 @@ class Admissionm extends CI_Model
 		parent::__construct();
 	}
 
+	public function collegesession()
+	{
+		$result = $this->db->get('collegesesssion');
+		return $result->result();
+	}
 	public function addstudent($data)
 	{
 		$this->db->insert('bscadmission', $data);

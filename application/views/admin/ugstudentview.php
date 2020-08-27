@@ -23,9 +23,9 @@
                             <li class="breadcrumb-item active">All Student</li>
                         </ol>
                         <ol class="breadcrumb mb-4">
-                            <a href="bscstudent" class="btn btn-info mr-2">B.Sc.</a>
-                            <a href="bcomstudent" class="btn btn-info mr-2">B.Com.</a>
-                            <a href="bastudent" class="btn btn-info mr-2">B.A.</a>
+                            <a href="<?=base_url();?>bscstudent" class="btn btn-info mr-2">B.Sc.</a>
+                            <a href="<?=base_url();?>bcomstudent" class="btn btn-info mr-2">B.Com.</a>
+                            <a href="<?=base_url();?>bastudent" class="btn btn-info mr-2">B.A.</a>
                             <a href="" class="btn btn-info mr-2">B.A. (Civil Services)</a>
                             <a href="" class="btn btn-info mr-2">M.Sc.</a>
                             <a href="" class="btn btn-info mr-2">B.A. (Civil Services)</a>
@@ -43,7 +43,9 @@
                                 <div class="col-md-3">
                                     <label>Select Session</label>
                                     <select class="form-control" name="collegesession">
-                                        <option value="1">2020-2021</option>
+                                        <?php foreach ($data as $row) { ?>
+                                           <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
+                                        <?php } ?>
                                     </select>
                                 </div>
                                 <div class="col-md-3">
@@ -75,7 +77,9 @@
                                 <div class="col-md-3">
                                     <label>Select Session</label>
                                     <select class="form-control" name="collegesession">
-                                        <option value="1">2020-2021</option>
+                                        <?php foreach ($data as $row) { ?>
+                                           <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
+                                        <?php } ?>
                                     </select>
                                 </div>
                                 <div class="col-md-3">
@@ -104,7 +108,9 @@
                                 <div class="col-md-3">
                                     <label>Select Session</label>
                                     <select class="form-control" name="collegesession">
-                                        <option value="1">2020-2021</option>
+                                        <?php foreach ($data as $row) { ?>
+                                           <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
+                                        <?php } ?>
                                     </select>
                                 </div>
                                 <div class="col-md-3">
