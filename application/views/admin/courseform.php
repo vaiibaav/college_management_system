@@ -11,7 +11,7 @@ if ($this->uri->segment(1) == "bscadmission") { ?>
                                   <div class="col-md-2">
                                         <label>Select Session</label>
                                         <select class="custom-select" name="bsccompulsorysub" required>
-                                          <?php foreach ($data as $row) { ?>
+                                          <?php foreach ($newsession as $row) { ?>
                                             <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
                                           <?php } ?>
                                         </select>
@@ -95,7 +95,7 @@ if ($this->uri->segment(1) == "bscadmission") { ?>
                                   <div class="col-md-2">
                                         <label>Select Session</label>
                                         <select class="custom-select" name="bsccompulsorysub" required>
-                                          <?php foreach ($data as $row) { ?>
+                                          <?php foreach ($newsession as $row) { ?>
                                             <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
                                           <?php } ?>
                                         </select>
@@ -165,7 +165,7 @@ if ($this->uri->segment(1) == "bscadmission") { ?>
                                   <div class="col-md-2">
                                         <label>Select Session</label>
                                         <select class="custom-select" name="bsccompulsorysub" required>
-                                          <?php foreach ($data as $row) { ?>
+                                          <?php foreach ($newsession as $row) { ?>
                                             <option value="<?=$row->id; ?>"><?=$row->clgsession; ?></option>
                                           <?php } ?>
                                         </select>

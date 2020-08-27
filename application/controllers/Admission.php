@@ -18,18 +18,19 @@ class Admission extends CI_Controller
 	}
 	public function bscadmission()
 	{
-		$clgsession["data"] = $this->admissionm->collegesession();
-		$this->load->view('admin/ugadmission',$clgsession);
+		$newsession["newsession"] = $this->admissionm->collegesessionnew();
+		$this->load->view('admin/ugadmission',$newsession);
+		//var_dump($newsession);
 	}
 	public function bcomadmission()
 	{
-		$clgsession["data"] = $this->admissionm->collegesession();
-		$this->load->view('admin/ugadmission',$clgsession);
+		$newsession["newsession"] = $this->admissionm->collegesessionnew();
+		$this->load->view('admin/ugadmission',$newsession);
 	}
 	public function baadmission()
 	{
-		$clgsession["data"] = $this->admissionm->collegesession();
-		$this->load->view('admin/ugadmission',$clgsession);
+		$newsession["newsession"] = $this->admissionm->collegesessionnew();
+		$this->load->view('admin/ugadmission',$newsession);
 	}
 	public function bscstudentview()
 	{

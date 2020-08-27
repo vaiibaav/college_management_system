@@ -15,6 +15,13 @@ class Admissionm extends CI_Model
 		$result = $this->db->get('collegesesssion');
 		return $result->result();
 	}
+	public function collegesessionnew()
+	{
+		//$value = "new";
+		$this->db->where('status', 1);
+		$result = $this->db->get('collegesesssion');
+		return $result->result();
+	}
 	public function addstudent($data)
 	{
 		$this->db->insert('bscadmission', $data);
